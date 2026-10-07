@@ -3,7 +3,7 @@
 **Student:** Beshoy Khalil Hanna  
 **Student ID:** 250101496  
 **Course:** Web Programming  
-**Date:** 6 October 2026
+**Date:** 27/9/2026
 
 ## 1. Internet and the World Wide Web
 
@@ -17,25 +17,27 @@ A simple comparison is a road network and the cars that use it: the roads are li
 
 ## 2. Web 3.0
 
-Web 3.0 is usually described as a newer idea for online services that gives users more control and relies less on one company’s servers. In Web 2.0, people create posts, videos, and other content, but large platforms often control the accounts, data, and rules. In the Web 3.0 version discussed here, some services use a blockchain, a shared record maintained by many computers, instead of one central database.
+Web 3.0 is a developing idea for the next web. Some people use the term for the Semantic Web, where data is easier for software to understand. Others use Web3 for blockchain services that let users own digital assets and interact without relying on one platform.
 
-Smart contracts are programs stored on a blockchain. They can carry out agreed actions automatically, such as recording a transfer, when their conditions are met. Decentralized apps, or dapps, combine these contracts with a normal app interface. A user might connect a digital wallet instead of making a regular username and password account. These tools can make activity more open and harder for one company to change, but they also bring real downsides: transactions may cost money, mistakes in contracts can be difficult to fix, and the apps can feel confusing to new users.
+Web 2.0 is the web most of us use now. People post content and use interactive apps, but companies usually store the accounts and data on their own servers. In blockchain-based Web3, a blockchain keeps a shared record on many computers. Smart contracts are programs on that network that carry out rules when conditions are met. Decentralized apps, or dApps, use smart contracts and often let a person connect with a digital wallet.
 
-In my opinion, Web 3.0 has some useful ideas, especially when people need shared records or want an app that does not depend completely on one company. At the same time, I do not think every website needs a blockchain. Some regular apps already do their job well, and adding crypto could make them harder to use. I would be more interested in Web 3.0 if it became easier, safer, and cheaper for normal users. I think it could have a future, but only if it solves real everyday problems instead of adding blockchain just because it is popular.
+These apps can make rules easier to inspect and reduce dependence on one company. But they have trade-offs: fees, slow transactions, wallet security, and difficult interfaces. A coding mistake in a smart contract can also be costly.
 
-**Word count: 267**
+I think these tools may be useful for some services, such as shared records or digital ownership. I do not think every website needs a blockchain. Web3’s future will depend on making useful services simple, safe, and affordable for ordinary users.
+
+**Word count: 202**
 
 ## 3. Network tab: three request examples
 
-I checked these GET requests on **6 October 2026**. These are example observations; responses can change over time or by location. For a submission based on your own DevTools session, replace this table with three requests you click in the browser's Network tab.
+I used the simple JSONPlaceholder API and opened these three URLs directly in Edge. Each page displayed a JSON response. In DevTools, the **Network** tab records each page load as a `GET` request; select a row to check its status under **General** and its `Content-Type` under **Response Headers**.
 
 | URL | Method | Status code | Content-Type |
 |---|---|---:|---|
-| `https://example.com/` | GET | 200 | `text/html; charset=utf-8` |
-| `https://www.iana.org/domains/reserved` | GET | 200 | `text/html; charset=UTF-8` |
-| `https://example.com/robots.txt` | GET | 404 | `text/html; charset=utf-8` |
+| `https://jsonplaceholder.typicode.com/posts/1` | GET | 200 | `application/json` |
+| `https://jsonplaceholder.typicode.com/users/1` | GET | 200 | `application/json` |
+| `https://jsonplaceholder.typicode.com/comments/1` | GET | 200 | `application/json` |
 
-**How to check in DevTools:** open a website, press **F12**, select **Network**, reload, click a request, then look under **Headers**. The method and status appear in the General section; `Content-Type` appears under Response Headers. A 404 means the requested path was not found, which is still a valid request to record.
+To repeat: press **F12**, choose **Network**, reload one of these URLs, and click its request. The response body is JSON, so the browser shows it as plain text rather than a formatted web page.
 
 ## Sources
 
@@ -43,7 +45,4 @@ I checked these GET requests on **6 October 2026**. These are example observatio
 - ethereum.org, [What is Web3?](https://ethereum.org/web3)
 - ethereum.org, [Web2 vs Web3](https://ethereum.org/developers/docs/web2-vs-web3/)
 - ethereum.org, [What are dapps?](https://ethereum.org/what-are-apps/)
-
-
-
-
+- JSONPlaceholder, [Fake Online REST API](https://jsonplaceholder.typicode.com/)

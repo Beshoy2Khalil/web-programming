@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f3f5f9;
+  color: #263449;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  color: #17243b;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+a {
+  color: #4d46c8;
+}
+
+a:hover {
+  color: #29237e;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: 10px;
+  padding: 8px 12px;
+  background: white;
+}
+
+.skip:focus {
+  left: 10px;
+}
+
+header,
+footer {
+  padding: 24px;
+  text-align: center;
+}
+
+header {
+  background: white;
+  border-bottom: 1px solid #d9dfeb;
+}
+
+.logo {
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #4d46c8;
+  color: white;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 14px;
+  list-style: none;
+}
+
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 28px auto;
+  padding: 0 20px;
+}
+
+.post {
+  border-left: 4px solid #d9dfeb;
+}
+
+article,
+.card {
+  margin-bottom: 18px;
+  padding: 20px;
+  border: 1px solid #d9dfeb;
+  border-radius: 10px;
+  background: white;
+}
+
+article h2 {
+  margin-bottom: 8px;
+}
+
+article img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 12px 0;
+  border-radius: 8px;
+}
+
+.post-info {
+  color: #687792;
+  font-size: 14px;
+}
+
+.featured {
+  border-top: 4px solid #4d46c8;
+}
+
+aside ul {
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 6px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 4px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #aeb8c9;
+  border-radius: 5px;
+  font: inherit;
+}
+
+button {
+  margin-top: 10px;
+  padding: 9px 14px;
+  border: 0;
+  border-radius: 5px;
+  background: #4d46c8;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+}
+
+button:hover {
+  background: #29237e;
+}
+
+fieldset {
+  padding: 16px;
+  border: 1px solid #aeb8c9;
+  border-radius: 8px;
+}
+
+legend {
+  padding: 0 6px;
+  font-weight: bold;
+}
+
+footer {
+  background: #17243b;
+  color: white;
+}
+
+footer h2 {
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+.copyright {
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .page {
+    grid-template-columns: 1fr;
+    margin-top: 18px;
+    padding: 0 12px;
+  }
+
+  header,
+  footer {
+    padding: 18px 12px;
+  }
+}
